@@ -17,12 +17,12 @@ mongoose
 
 mongoose.Promise = global.Promise;
 
-// module.exports = {
-//   User: require('../models/User'),
-//   Book: require('../models/Book'),
-//   Category: require('../models/Category'),
-//   Comment: require('../models/Comment'),
-//   Marker: require('../models/Marker'),
-//   BookRating: require('../models/BookRating'),
-//   CommentRating: require('../models/CommentRating'),
-// };
+module.exports = {
+  User: require('../models/User'),
+  Book: require('../models/Book'),
+  Category: require('../models/Category'),
+  Comment: require('../models/Comment'),
+  Marker: require('../models/Marker'),
+  BookRating: require('../models/BookRating'),
+  CommentRating: require('../models/CommentRating'),
+};

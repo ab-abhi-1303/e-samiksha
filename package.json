@@ -1,5 +1,5 @@
 {
-  "name": "my-library",
+  "name": "myproject",
   "version": "1.0.0",
   "description": "a project to share reviews of books students have read with statistics as well",
   "main": "index.js",

@@ -37,6 +37,7 @@ async function setUserRating({ commentId, value }, userId) {
   }
 }
 
+//get rating of a particular comment
 async function getCommentRating(commentId) {
   if (!isObjectIDvalid(commentId)) throw new Error('CommentID is not valid!');
 
@@ -51,8 +52,10 @@ async function getCommentRating(commentId) {
   }, 0);
 
   return { value };
+  //returning values
 }
 
+//getUserCommentRating for each indivudual user in the database
 async function getUserCommentRating(commentId, userId) {
   if (!isObjectIDvalid(commentId)) throw new Error('CommentID is not valid!');
 
@@ -65,6 +68,7 @@ async function getUserCommentRating(commentId, userId) {
   return { value: null };
 }
 
+//get all comment ratings
 async function getAll() {
   return await CommentRating.find();
 }

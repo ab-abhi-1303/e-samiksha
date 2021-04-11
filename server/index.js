@@ -30,9 +30,9 @@ app.use('/api/booksRating', require('./controllers/booksRating.controller'));
 app.use('/api/markers', require('./controllers/markers.controller'));
 app.use('/api/statistics', require('./controllers/statistics.controller'));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../client', 'build', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, '../client', 'build', 'index.html'));
+// });
 
 app.use(errorHandler);
 

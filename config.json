@@ -1,4 +1,0 @@
-{
-    "secret" : "Tester",
-    "connectionString": "mongodb+srv://admin:admin@cluster0.hjr9j.gcp.mongodb.net/Reviewer2?retryWrites=true&w=majority"
-}

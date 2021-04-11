@@ -55,7 +55,7 @@ async function getCommentRating(commentId) {
   //returning values
 }
 
-//getUserCommentRating for each indivudual user in the database
+//getUserCommentRating for each indivudual user in the database.
 async function getUserCommentRating(commentId, userId) {
   if (!isObjectIDvalid(commentId)) throw new Error('CommentID is not valid!');
 

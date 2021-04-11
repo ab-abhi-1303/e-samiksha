@@ -8,6 +8,7 @@ const userService = require('../services/user.service');
 
 const average = (array) => array.reduce((a, b) => a + b) / array.length;
 
+//get most rated books by users
 async function getBestBooks(quantity) {
   const ratings = await booksRatingService.getAll();
 
@@ -46,6 +47,7 @@ async function getLastBooks(quantity) {
   return await booksService.getFew(quantity);
 }
 
+//most commented books by users
 async function getMostPopularBooks(quantity) {
   const comments = await commentsService.getAll();
 

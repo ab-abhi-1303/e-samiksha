@@ -8,7 +8,7 @@ router.get('/lastBooks', getLastBooks); //recently added books
 router.get('/mostPopularBooks', getMostPopular); //most commented
 router.get('/getQuantityOfCategories', getQuantityOfCategories);
 router.get('/getNumbers', getNumbers); //get every stat of every model in DB
-router.get('/userActivity/:userId', getUserActivity); //get all activity of a user
+router.get('/userActivity/:userId', getUserActivity); //get all activity of a user and portal
 
 //most rated books
 function getBestBook(req, res) {

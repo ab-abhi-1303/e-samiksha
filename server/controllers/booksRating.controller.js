@@ -24,6 +24,7 @@ async function getAverageBookRate(req, res) {
     .catch((err) => res.json({ message: err.message, isSaved: false }));
 }
 
+//jo user loggedIN hai, uska rating kya hai for a :bookID, vo bhejna hai
 async function getBookUserRate(req, res) {
   const { bookId } = req.params;
   const userId = req.user.sub;

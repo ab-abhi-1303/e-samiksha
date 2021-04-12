@@ -38,10 +38,11 @@ async function getAverageRate(bookId) {
     }, 0) / bookRatings.length
   ).toFixed(2);
 
+  //quantity below determines the number of users who have given rating to that book
   return { value, quantity: bookRatings.length };
 }
 
-//has user rated the book
+//has user rated the book, if yes return value
 async function userRateToBook(bookId, userId) {
   if (!isObjectIDvalid(bookId)) throw newError('CommentID is not valid!');
 

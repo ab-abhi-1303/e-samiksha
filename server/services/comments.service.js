@@ -6,7 +6,7 @@ const Comment = db.Comment;
 
 const booksService = require('../services/books.service.js');
 
-//get comments for a book
+//get all the comments for a book(By all users)
 async function getCommentsForBook(bookId) {
   return await Comment.find({
     bookId,

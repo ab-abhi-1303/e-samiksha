@@ -3,12 +3,12 @@ const router = express.Router();
 
 const statisticsService = require('../services/statistics.service.js');
 
-router.get('/bestBooks', getBestBook);
-router.get('/lastBooks', getLastBooks);
-router.get('/mostPopularBooks', getMostPopular);
+router.get('/bestBooks', getBestBook); //best as in ratings
+router.get('/lastBooks', getLastBooks); //recently added books
+router.get('/mostPopularBooks', getMostPopular); //most commented
 router.get('/getQuantityOfCategories', getQuantityOfCategories);
-router.get('/getNumbers', getNumbers);
-router.get('/userActivity/:userId', getUserActivity);
+router.get('/getNumbers', getNumbers); //get every stat of every model in DB
+router.get('/userActivity/:userId', getUserActivity); //get all activity of a user
 
 //most rated books
 function getBestBook(req, res) {
